@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  
+  </head>
+<style>
+@font-face {
+  font-family: 'Athletics'; 
+  src: url('fonts/Athletics Sans Font Family/athletics-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next'; 
+  src: url('fonts/Avenir-next-lt-pro/AvenirNextLTPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/Avenir-next-lt-pro/AvenirNextLTPro-DemiCn.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+    html, body {
+        height: 100%;
+
+      }
+
+      body {
+        display:flex;
+        flex-direction: column;
+        background-color: #E9E9AF;
+        font-family: Avenir Next,sans-serif;
+        
+      }
+
+
+    #principal {
+
+        flex:1;
+    }
+
+    /*#carouselExampleIndicators {
+        height:800px;
+
+    }
+
+    #carousel-inner{
+        height:80%;
+    }*/
+
+
+/*.carousel {
+  margin-bottom: 4rem;
+  height:89vh !important;
+
+}*/
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 46vh;
+}
+
+
+
+/* FUENTE: EXAMPLES/CAROUSEL/CAROUSEL.CSS*/
+.card-img-top{
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+.card{
+  background-color: #E9E9AF; 
+  border:0;
+}
+#navbar{
+  height:18vh;
+  background-color: #E9E9AF; 
+  padding: 1rem 0;
+
+}
+
+#myCarousel{
+  height:84vh !important;
+  align-items: center;
+}
+
+
+
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center; 
+}
+
+.form-inline {
+    display: flex;
+    align-items: center; 
+}
+
+.form-control {
+    width: 200px; 
+    margin-right: 10px; 
+}
+
+#container-app{
+
+  background-color: #B6EBAD;
+  font-family: Athletics,sans-serif;
+
+}
+
+h5 {
+
+  font-weight: bold;
+
+}
+
+#google {
+
+max-width: 100%;
+max-height: 70%;
+}
+
+#apple {
+
+max-width: 100%;
+max-height: 70%;
+
+}
+
+.col-google {
+    display: inline-flex; 
+}
+
+.col-apple {
+    display: inline-flex; 
+}
+
+#footer-links {
+  background-color: #E9E9AF; 
+
+
+}
+
+
+@media (max-width: 768px) {
+            #google, #apple {
+                width: 200px;
+            }
+}
+
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light px-3" id="navbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand mx-auto" href="index.html">
+      <img src="fotos/saborysazonlogo-transformed-Photoroom.png" width="40" height="40" alt="Logo">
+  </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+            <li class="nav-item"><a class="nav-link" href="enviarReceta.html">Enviar receta</a></li>
+        </ul>
+
+        <a class="navbar-brand mx-auto d-none d-md-block" href="index.html">
+            <img src="fotos/large_(2)-transformed_450x128.png" width="100" height="40" alt="Logo">
+        </a>
+    </div>
+
+    <form class="form-inline ml-auto d-flex">
+        <input class="form-control mr-sm-2 d-none d-md-block" type="search" placeholder="Buscar" aria-label="Buscar" style="background-color: #E1E1D0; border: 1px solid #B0B0A0;">
+        <button class="btn btn-outline-success my-2 my-sm-0 d-none d-md-block" type="submit">Buscar</button>
+    </form>
+</nav>
+
+    
+    <div id="myCarousel" class="carousel slide mb-6 d-none d-md-block" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="fotos/dosbros-tacos-home-banner.jpg" alt="Tacos Mexicanos">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+          </svg>
+          <div class="container pb-5">
+            <div class="carousel-caption text-start" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+              <h1 style="color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Disfruta de los auténticos tacos mexicanos</h1>
+              <p style="color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">Explora las mejores recetas de tacos, uno de los platillos más representativos de la cocina mexicana.</p>
+              <p><a class="btn btn-lg btn-success" href="#">Descubre las recetas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="fotos/imagen3.jpg" alt="Sopes y gorditas">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+              <h1 style="color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Sopas y caldos, una tradición deliciosa</h1>
+              <p style="color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">Descubre las sopas y caldos tradicionales que han pasado de generación en generación.</p>
+              <p><a class="btn btn-lg btn-success" href="#">Ver las recetas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="fotos/ee704c_19_EnchiladasDeMole.jpg" alt="Enchiladas y mole">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+              <h1 style="color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Enchiladas con mole, el sabor de México</h1>
+              <p style="color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">Sumérgete en la riqueza de los sabores mexicanos con estas enchiladas cubiertas de un delicioso mole.</p>
+              <p><a class="btn btn-lg btn-success" href="#">Descubre cómo hacerlas</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    
+
+
+
+   
+    <div class="container py-5 px-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img src="fotos/tacos-al-pastor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Tacos y antojos</h5>
+                    <p class="card-text py-4">Tortillas rellenas de carne, pollo, o guisos, acompañados de salsas y vegetales. Incluye antojitos como quesadillas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img src="fotos/presentacion-principal-de-los-burritos-mexicanos-con-carne-picada.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Burritos</h5>
+                    <p class="card-text py-4">Tortillas de harina rellenas de carne, frijoles, arroz, queso y salsas, ideales para comida rápida o para llevar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+            <div class="card">
+                <img src="fotos/sopas-y-caldos-mexicanos1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Sopas y caldos</h5>
+                <p class="card-text py-4">Sopas reconfortantes como pozole y caldo de pollo, perfectas para calentar el cuerpo en cualquier ocasión.</p>
+
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 mt-md-5 mt-5">
+            <div class="card">
+                <img src="fotos/image.1592429867593.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Platos fuertes</h5>
+                <p class="card-text py-4">Comidas principales como mole y cochinita pibil, con ingredientes ricos y completos.</p>
+
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-2 text-center">
+            <button type="button" class="btn btn-success">Ver recetas</button>
+          </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="container-fluid" id="container-app">
+        <div class="row justify-content-center pt-5">
+          <div class="col-md-4">
+            <h2 class="mensaje-app text-center">Descarga nuestra app</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center py-5">
+          <div class="col-md-2 d-flex justify-content-center">
+            <img src="fotos/image.webp" alt="">
+          </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+          <div class="col-md-2 d-flex justify-content-center" id="col-google">
+            <a href="https://play.google.com">
+              <img decoding="async" id="google" src="https://www.guidum.com/wp-content/uploads/2023/06/google-play-badge-2.png" alt="descargar en google play" class="wp-image-387" width="323" height="97" srcset="https://www.guidum.com/wp-content/uploads/2023/06/google-play-badge-2.png 646w, https://www.guidum.com/wp-content/uploads/2023/06/google-play-badge-2-300x90.png 300w" sizes="(max-width: 323px) 100vw, 323px"></a>
+          </div>
+          <div class="col-md-2 d-flex justify-content-center" id="col-apple">
+            <a href="https://play.google.com"><img decoding="async" id="apple" src="https://www.guidum.com/wp-content/uploads/2023/06/apple-1.png" alt="descargar en Apple Store" class="wp-image-388" width="323" height="108" srcset="https://www.guidum.com/wp-content/uploads/2023/06/apple-1.png 646w, https://www.guidum.com/wp-content/uploads/2023/06/apple-1-300x100.png 300w" sizes="(max-width: 323px) 100vw, 323px"></a>
+          </div>
+        </div>
+    </div>
+
+
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="container-fluid p-4" id="footer-links">
+          <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Enlaces</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="" class="text-dark">Inicio</a></li>
+                      <li><a href="" class="text-dark">Recetas</a></li>
+                      <li><a href="" class="text-dark">Enviar Receta</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex flex-column align-items-end">
+                  <h5 class="text-uppercase">Síguenos en</h5>
+                  <a class="navbar-brand " href="">
+                      <i class="fab fa-facebook-square" style="font-size: 30px;"></i><span class="ms-2"></span> Facebook
+                  </a>
+                    <a class="navbar-brand pt-3" href="">
+                      <i class="fab fa-instagram" style="font-size: 30px;"></i><span class="ms-2"></span> Instagram
+                  </a>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="text-center pt-1" style="background-color: #E9E9AF;">
+                  © 2024 Sabor y Sazón. Todos los derechos reservados.
+              </div>
+          </div>
+  
+      </div>
+  </footer>
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
